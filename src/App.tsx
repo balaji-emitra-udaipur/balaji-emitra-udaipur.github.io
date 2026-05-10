@@ -145,6 +145,18 @@ export default function App() {
             Your One-Stop <span className="text-brand-primary">e-Mitra</span> & <br className="hidden md:block" />
             Digital Service Hub
           </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+            className="flex items-center justify-center gap-4 mb-6"
+          >
+            <div className="w-12 h-[2px] bg-gradient-to-r from-transparent to-brand-primary/40" />
+            <span className="text-sm md:text-base font-black tracking-widest uppercase text-brand-primary bg-blue-50/90 backdrop-blur-md px-6 py-2.5 rounded-full border-2 border-blue-200 shadow-md flex items-center gap-2.5">
+              <Award size={18} className="text-brand-primary animate-pulse" /> Prop: Yogesh Prajapat
+            </span>
+            <div className="w-12 h-[2px] bg-gradient-to-l from-transparent to-brand-primary/40" />
+          </motion.div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -158,13 +170,16 @@ export default function App() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row justify-center gap-4 px-4"
+            className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 px-4"
           >
-            <a href="#services" className="px-8 py-4 bg-brand-primary text-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 font-bold text-lg">
-              Explore Our Services
+            <a href="tel:+919929996365" className="px-8 py-4 bg-brand-primary text-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 font-bold text-lg flex items-center justify-center gap-2">
+              <Phone size={20} /> Call Now
             </a>
             <a href={whatsappLink} className="px-8 py-4 bg-white text-green-600 border border-green-200 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 font-bold text-lg flex items-center justify-center gap-2">
               <MessageCircle size={20} /> WhatsApp Us
+            </a>
+            <a href="https://maps.app.goo.gl/JXeamEdiXJ79iniD8" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-blue-50 text-brand-primary border border-blue-200 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 font-bold text-lg flex items-center justify-center gap-2">
+              <MapPin size={20} /> Reach Store
             </a>
           </motion.div>
         </div>
