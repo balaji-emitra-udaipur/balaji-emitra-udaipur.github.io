@@ -1,0 +1,8 @@
+{
+  "name": "Shree Balaji Emitra",
+  "description": "Premium e-Mitra & Digital Service Hub for government identity, financial transactions, and document services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
