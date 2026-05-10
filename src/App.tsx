@@ -108,9 +108,11 @@ export default function App() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-lg shadow-sm border-b border-white/50 py-2' : 'bg-transparent py-4'}`}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-              SB
-            </div>
+            <img
+              src="/images/balaji_logo.png"
+              alt="Shree Balaji Emitra Logo"
+              className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-lg transition-transform hover:scale-105"
+            />
             <span className={`font-display font-bold text-xl ${scrolled ? 'text-gray-900' : 'text-gray-900'}`}>
               Shree Balaji <span className="text-brand-secondary">Emitra</span>
             </span>
@@ -460,9 +462,11 @@ export default function App() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-                <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold">
-                  SB
-                </div>
+                <img
+                  src="/images/balaji_logo.png"
+                  alt="Shree Balaji Emitra Logo"
+                  className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-xl bg-white/5 p-1 border border-white/10"
+                />
                 <span className="font-display font-bold text-xl uppercase tracking-wider">
                   Shree Balaji <span className="text-brand-secondary">Emitra</span>
                 </span>
